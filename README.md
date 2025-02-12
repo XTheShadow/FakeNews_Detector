@@ -140,20 +140,5 @@ curl -X POST "http://localhost:8000/predict" \
 
 
 
-## 📂 Project Structure
-
-```
-├── datasets/
-│   ├── LIAR_Dataset/       # LIAR dataset files
-│   ├── ISOT_Dataset/       # True/Fake news datasets
-│   └── ...                 # Other datasets
-├── model.py                # Main training script
-├── FastAPI_Connection.py   # API implementation
-├── requirements.txt        # Dependencies
-└── README.md               # This document
-```
-
-
-
 ## 📜 License
 This project is licensed under the MIT License.
