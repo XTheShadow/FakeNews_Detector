@@ -6,14 +6,14 @@ FakeNews_Detector is a **Python-based** news classification system that uses **m
 ---
 
 ## 📌 Features  
-✔️ **Multi-dataset training** (LIAR, ISOT, Fake-Real, and custom datasets)  
-✔️ **Advanced text preprocessing** with lemmatization and TF-IDF vectorization  
-✔️ **Class imbalance handling** using SMOTE  
-✔️ **Hyperparameter tuning** with GridSearchCV  
-✔️ **Ensemble learning** with Voting Classifier  
-✔️ **Model evaluation metrics** (Confusion Matrix, ROC Curve, Feature Importance)  
-✔️ **FastAPI backend** with CORS support  
-✔️ **Probability-based predictions** with confidence scores  
+ * Multi-dataset training** (LIAR, ISOT, Fake-Real, and custom datasets)  
+ * Advanced text preprocessing** with lemmatization and TF-IDF vectorization  
+ * Class imbalance handling** using SMOTE  
+ * Hyperparameter tuning** with GridSearchCV  
+ * Ensemble learning** with Voting Classifier  
+ * Model evaluation metrics** (Confusion Matrix, ROC Curve, Feature Importance)  
+ * FastAPI backend** with CORS support  
+ * Probability-based predictions** with confidence scores  
 
 ---
 
@@ -21,22 +21,22 @@ FakeNews_Detector is a **Python-based** news classification system that uses **m
 ## 🛠️ Installation  
 
 ### ✅ Prerequisites  
-- 🐍 **Python 3.8** or later
-- 📚 Essential libraries:
+-  **Python 3.8** or later
+-  Essential libraries:
   ```bash
   FastAPI, Uvicorn, Scikit-learn, Pandas, Numpy, Joblib, NLTK, imbalanced-learn, matplotlib, seaborn
-
+  ```
   
 ## 🚀 Setup & Installation
 
-### 1️⃣ Clone the repository:
+### 1️. Clone the repository:
 ```bash
 git clone https://github.com/XTheShadow/FakeNews_Detector.git
 cd FakeNews_Detector
 ```
 
 
-### 2️⃣ Set up the virtual environment:
+### 2️. Set up the virtual environment:
 ```bash
 python -m venv .venv
 ```
@@ -53,13 +53,13 @@ source .venv/bin/activate
 ```
 
 
-### 3️⃣ Install dependencies:
+### 3️. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
 
-### 4️⃣ Train the model:
+### 4️. Train the model:
 ```bash
 python model.py
 ```
@@ -71,7 +71,7 @@ This will:
 - Save trained models (`.pkl` files) and vectorizer
 
 
-### 5️⃣ Launch FastAPI server:
+### 5️. Launch FastAPI server:
 ```bash
 uvicorn FastAPI_Connection:app --reload
 ```
@@ -111,7 +111,7 @@ curl -X POST "http://localhost:8000/predict" \
 
 ## 🧠 Model Architecture
 
-### 🔧 Data Pipeline
+### Data Pipeline
   
 * **Text Preprocessing:**
   - Special character removal
@@ -123,7 +123,7 @@ curl -X POST "http://localhost:8000/predict" \
   - SMOTE oversampling for imbalanced classes
 
 
-### 🤖 Machine Learning Models
+### Machine Learning Models
 
 - Logistic Regression (with GridSearchCV tuning)
 - Ridge Classifier
@@ -131,7 +131,7 @@ curl -X POST "http://localhost:8000/predict" \
 - Ensemble Voting Classifier
 
 
-### 📊 Evaluation Metrics
+### Evaluation Metrics
 
 - Accuracy scores
 - ROC-AUC curves
